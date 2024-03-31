@@ -28,8 +28,13 @@
   "artists": [
     {
       "id": "1",
-      "name": "John Smith",
+      "name": "Brave Edmund",
       "email": "john@example.com"
+    },
+    {
+      "name": "Wasiu",
+      "email": "wasiu@gmail.com",
+      "id": "iuulyBE"
     }
   ]
 }
