@@ -1,4 +1,4 @@
-# React Admin Example
+# SoundCtrl Admin
 
 > SoundCtrl Admin control section. We use JSON-Server for our REST API
 
