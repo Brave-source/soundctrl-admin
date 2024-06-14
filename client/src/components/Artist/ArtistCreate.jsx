@@ -5,7 +5,7 @@ const ArtistCreate = (props) => {
   return (
     <Create title='Create an Artist' {...props}>
       <SimpleForm>
-        <TextInput source='name' />
+        <TextInput source='username' />
         <TextInput source='email' />
         <TextInput source='password' />
         <TextInput source='fandom' />

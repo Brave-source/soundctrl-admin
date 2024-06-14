@@ -6,7 +6,7 @@ const ArtistEdit = (props) => {
     <Edit title='Edit Artist' {...props}>
       <SimpleForm>
         <TextInput disabled source='id' />
-        <TextInput source='name' />
+        <TextInput source='username' />
         <TextInput source='email' />
         <TextInput source='password' />
         <TextInput source='fandom' />
