@@ -18,18 +18,17 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   const handleLogin = (username, password) => {
-    // Implement your authentication logic here
-    // For demo purposes, check hardcoded credentials
+    // Emmy Implement your authentication logic here
+    // For demo purposes, Emmy use this hardcoded credentials
     if (username === 'admin' && password === 'password') {
       setIsLoggedIn(true);
     } else {
-      alert('Invalid credentials'); // Replace with proper error handling
+      alert('Invalid credentials');
     }
   };
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    // Optionally, clear localStorage or cookies used for storing tokens
   };
 
   if (!isLoggedIn) {
