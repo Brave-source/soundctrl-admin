@@ -29,12 +29,17 @@
     {
       "id": "1",
       "name": "Brave Edmund",
-      "email": "john@example.com"
+      "email": "john@example.com",
+      "verified": false,
+      "password": "@ebis991",
+      "Fandoms": "245",
+      "fandom": "2456"
     },
     {
       "name": "Wasiu",
       "email": "wasiu@gmail.com",
-      "id": "iuulyBE"
+      "id": "iuulyBE",
+      "verified": false
     }
   ]
 }

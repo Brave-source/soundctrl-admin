@@ -4,9 +4,9 @@ import restProvider from 'ra-data-simple-rest'
 import PostList from './components/PostList'
 import PostCreate from './components/PostCreate'
 import PostEdit from './components/PostEdit'
-import ArtistList from './components/ArtistList'
-import ArtistCreate from './components/ArtistCreate'
-import ArtistEdit from './components/ArtistEdit'
+import ArtistList from './components/Artist/ArtistList'
+import ArtistCreate from './components/Artist/ArtistCreate'
+import ArtistEdit from './components/Artist/ArtistEdit'
 
 function App() {
   return (
@@ -23,6 +23,12 @@ function App() {
         create={ArtistCreate}
         edit={ArtistEdit}
       />
+      {/* <Resource
+        name='Top Fans'
+        list={ArtistList}
+        create={ArtistCreate}
+        edit={ArtistEdit}
+      /> */}
     </Admin>
   )
 }
