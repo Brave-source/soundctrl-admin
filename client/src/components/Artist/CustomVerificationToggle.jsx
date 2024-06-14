@@ -1,6 +1,6 @@
 import React from 'react';
 import { useUpdate, useNotify, useRefresh } from 'react-admin';
-import { Checkbox } from '@material-ui/core';
+import Switch from '@material-ui/core/Switch';
 
 const CustomVerificationToggle = ({ record }) => {
   const [update] = useUpdate();
@@ -24,7 +24,7 @@ const CustomVerificationToggle = ({ record }) => {
   };
 
   return (
-    <Checkbox
+    <Switch
       checked={record.verified}
       onChange={handleToggle}
       color="primary"

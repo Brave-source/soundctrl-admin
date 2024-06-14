@@ -16,7 +16,6 @@ const ArtistList = (props) => {
         <TextField source='id' />
         <TextField source='username' />
         <EmailField source='email' />
-        <TextField source='password' />
         <TextField source='fandom' />
         <CustomVerificationToggle source="verified" label="Verified" />
         <EditButton basePath='/artists' />
