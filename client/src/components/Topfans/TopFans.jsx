@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Table, TableBody, TableCell, TableHead, TableRow, Paper, IconButton } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import SelectFansModal from './SelectFansModal';
@@ -15,6 +15,17 @@ const dummyFans = [
 const TopFans = () => {
   const [open, setOpen] = useState(false);
   const [topFans, setTopFans] = useState([]);
+
+  // Load topFans from localStorage on component mount
+  useEffect(() => {
+    const storedTopFans = JSON.parse(localStorage.getItem('topFans')) || [];
+    setTopFans(storedTopFans);
+  }, []);
+
+  // Save topFans to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('topFans', JSON.stringify(topFans));
+  }, [topFans]);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
