@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Admin, Resource } from "react-admin";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import restProvider from "ra-data-simple-rest";
@@ -9,11 +9,33 @@ import ArtistList from "./components/Artist/ArtistList";
 import ArtistCreate from "./components/Artist/ArtistCreate";
 import ArtistEdit from "./components/Artist/ArtistEdit";
 import TopFans from "./components/Topfans/TopFans";
+import Login from "./components/Login"; 
 
-// Define a theme
+
 const theme = createTheme();
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+
+  const handleLogin = (username, password) => {
+    // Implement your authentication logic here
+    // For demo purposes, check hardcoded credentials
+    if (username === 'admin' && password === 'password') {
+      setIsLoggedIn(true);
+    } else {
+      alert('Invalid credentials'); // Replace with proper error handling
+    }
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    // Optionally, clear localStorage or cookies used for storing tokens
+  };
+
+  if (!isLoggedIn) {
+    return <Login login={handleLogin} />;
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Admin dataProvider={restProvider("http://localhost:3000")}>
