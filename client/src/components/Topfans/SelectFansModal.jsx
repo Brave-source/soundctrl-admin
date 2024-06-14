@@ -14,11 +14,11 @@ import {
 
 // Dummy data for testing
 const dummyFans = [
-  { id: 1, name: 'Fan One', email: 'fanone@example.com' },
-  { id: 2, name: 'Fan Two', email: 'fantwo@example.com' },
-  { id: 3, name: 'Fan Three', email: 'fanthree@example.com' },
-  { id: 4, name: 'Fan Four', email: 'fanfour@example.com' },
-  { id: 5, name: 'Fan Five', email: 'fanfive@example.com' },
+  { id: 1, username: 'Fan One', email: 'fanone@example.com' },
+  { id: 2, username: 'Fan Two', email: 'fantwo@example.com' },
+  { id: 3, username: 'Fan Three', email: 'fanthree@example.com' },
+  { id: 4, username: 'Fan Four', email: 'fanfour@example.com' },
+  { id: 5, username: 'Fan Five', email: 'fanfive@example.com' },
 ];
 
 const SelectFansModal = ({ open, onClose, onSave }) => {

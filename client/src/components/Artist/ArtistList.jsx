@@ -15,6 +15,7 @@ const ArtistList = (props) => {
       <Datagrid>
         <TextField source='id' />
         <TextField source='username' />
+        <TextField source='password' />
         <EmailField source='email' />
         <TextField source='fandom' />
         <CustomVerificationToggle source="verified" label="Verified" />

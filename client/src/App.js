@@ -8,8 +8,9 @@ import PostEdit from "./components/PostEdit";
 import ArtistList from "./components/Artist/ArtistList";
 import ArtistCreate from "./components/Artist/ArtistCreate";
 import ArtistEdit from "./components/Artist/ArtistEdit";
-import TopFans from "./components/Topfans/TopFans";
 import Login from "./components/Login"; 
+import TopArtists from "./components/Trending/TopArtists";
+import TopFans from "./components/Topfans/TopFans";
 
 
 const theme = createTheme();
@@ -27,9 +28,9 @@ function App() {
     }
   };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
+  // const handleLogout = () => {
+  //   setIsLoggedIn(false);
+  // };
 
   if (!isLoggedIn) {
     return <Login login={handleLogin} />;
@@ -53,6 +54,10 @@ function App() {
         <Resource
           name="Topfans"
           list={TopFans}
+        />
+        <Resource
+          name="Trending Artist"
+          list={TopArtists}
         />
       </Admin>
     </ThemeProvider>

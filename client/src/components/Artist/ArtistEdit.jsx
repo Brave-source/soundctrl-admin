@@ -8,6 +8,7 @@ const ArtistEdit = (props) => {
         <TextInput disabled source='id' />
         <TextInput source='username' label='Username' />
         <TextInput source='email' label='Email' />
+        <TextInput source='password' label='Password' />
         <TextInput source='fandom' label='Fandom' />
       </SimpleForm>
     </Edit>

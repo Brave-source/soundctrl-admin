@@ -18,16 +18,24 @@
       "id": "1",
       "name": "Brave Edmund",
       "email": "john@example.com",
-      "verified": false,
+      "verified": true,
       "password": "@ebis991",
       "Fandoms": "245",
-      "fandom": "2456"
+      "fandom": "2456",
+      "username": "Edmund"
     },
     {
       "name": "Wasiu",
       "email": "wasiu@gmail.com",
       "id": "iuulyBE",
       "verified": false
+    },
+    {
+      "username": "Joe123",
+      "email": "eee@gmail.com",
+      "password": "heuehe83",
+      "fandom": "200",
+      "id": "cMx88tr"
     }
   ]
 }
